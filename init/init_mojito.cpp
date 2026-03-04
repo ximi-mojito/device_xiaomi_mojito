@@ -55,20 +55,7 @@ void load_dalvikvm_props() {
     property_override("dalvik.vm.heapminfree", "8m");
 }
 
-void load_sunny() {
-    property_override("bluetooth.device.default_name", "Redmi Note 10");
-    property_override("vendor.usb.product_string", "Redmi Note 10");
-    property_override("ro.product.brand", "Redmi");
-    property_override("ro.product.device", "sunny");
-    property_override("ro.product.manufacturer", "Xiaomi");
-    property_override("ro.product.model", "M2101K7AI");
-    property_override("ro.product.name", "sunny");
-    property_override("ro.build.fingerprint", "Redmi/sunny_global/sunny:12/RKQ1.210614.002/V14.0.9.0.SKGMIXM:user/release-keys");
-    property_override("ro.build.description", "sunny_global-user 12 SKQ1.210908.001 V14.0.9.0.SKGMIXM release-keys");
-}
-
 void vendor_load_properties() {
     std::string region = GetProperty("ro.boot.hwc", "");
-    load_sunny();
     load_dalvikvm_props();
 }

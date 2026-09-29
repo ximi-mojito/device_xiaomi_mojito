@@ -5,9 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_mojito.mk
-
-COMMON_LUNCH_CHOICES := \
-    infinity_mojito-user \
-    infinity_mojito-userdebug \
-    infinity_mojito-eng
+    $(LOCAL_DIR)/lineage_mojito.mk
